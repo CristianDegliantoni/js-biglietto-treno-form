@@ -13,22 +13,26 @@
 
 
         <h1> CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
-        <laber for="chilometri">inserisci i km</laber>
-        <input id="chilometri" type="number">
+        <form id="form-biglietto">
+
+            <label for="inseriscinome">inserisci il nome</label>
+            <input id="inseriscinome" type="text" required>
+
+            <label for="chilometri">inserisci i km</label>
+            <input id="chilometri" type="number">
 
 
-        <label for="menueta">scegli l'età:</label>
+            <label for="menueta">scegli l'età:</label>
+            <select id="menueta">
 
-        <select id="menueta">
+                <option value="adulto" selected> adulto </option>
+                <option value="minorenne">minorenne </option>
+                <option value="over65">over65 </option>
 
-            <option value="adulto" selected> adulto </option>
-            <option value="minorenne">minorenne </option>
-            <option value="over65">over65 </option>
+            </select>
 
-        </select>
-
-        <button id="esegui" type="button"> cliccami </button>
-
+            <button id="esegui" type="submit"> cliccami </button>
+        </form>
 
         <div id="risultato"></div>
 
