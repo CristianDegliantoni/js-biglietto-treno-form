@@ -3,14 +3,11 @@ const bottone = document.getElementById("esegui"); // oppure element.queryselect
 
 
 
-const prezzoAlKm = function (prezzo) {
-    return prezzo * 0.21
-}
+bottone.addEventListener("click", () => {
+    const chilometri = Number(kmUtente.value);
 
-bottone.addEventListener("click", function () {
-    const chilometriInseriti = Number(kmUtente.value);
-    prezzoAlKm = chilometriInseriti;
+    const prezzoBase = chilometri * 0.21;
 
-    console.log(prezzoAlKm);
+    console.log(prezzoBase);
 })
 
